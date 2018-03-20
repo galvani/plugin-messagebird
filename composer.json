@@ -1,0 +1,8 @@
+{
+  "name": "galvani/mautic-messagebird-bundle",
+  "type": "mautic-plugin",
+  "require": {
+    "mautic/composer-plugin": "^1.0",
+    "messagebird/php-rest-api": "~1.9"
+  }
+}
