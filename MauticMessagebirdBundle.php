@@ -33,7 +33,7 @@ class MauticMessagebirdBundle extends PluginBundleBase
         if ($pluginRecord) {
             $pluginRecord->setVersion($plugin->getVersion());
             $pluginRecord->setIsMissing(false);
-            $pluginRecord->setDescription('mautic.plugin.messagebird.description')
+            $pluginRecord->setDescription('mautic.plugin.messagebird.description');
         }
         var_dump($pluginRecord); die();
 
