@@ -17,7 +17,7 @@ return [
         'helpers' => [],
         'other'   => [
             'mautic.sms.transport.messagebird' => [
-                'class'     => 'MauticPlugin\MauticMessageBirdBundle\Services\MessageBirdApi',
+                'class'     => 'MauticPlugin\MauticMessagebirdBundle\Services\MessagebirdApi',
                 'arguments' => [
                     'mautic.page.model.trackable',
                     'mautic.helper.phone_number',
@@ -33,7 +33,7 @@ return [
         'models'       => [],
         'integrations' => [
             'mautic.integration.messagebird' => [
-                'class' => \MauticPlugin\MauticMessageBirdBundle\Integration\MessageBirdIntegration::class,
+                'class' => \MauticPlugin\MauticMessagebirdBundle\Integration\MessagebirdIntegration::class,
             ],
         ],
     ],

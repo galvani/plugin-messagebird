@@ -9,7 +9,7 @@
  * @author      Jan Kozak <galvani78@gmail.com>
  */
 
-namespace MauticPlugin\MauticMessageBirdBundle\Services;
+namespace MauticPlugin\MauticMessagebirdBundle\Services;
 
 use libphonenumber\NumberParseException;
 use libphonenumber\PhoneNumberFormat;
@@ -19,12 +19,12 @@ use Mautic\CoreBundle\Helper\PhoneNumberHelper;
 use Mautic\PageBundle\Model\TrackableModel;
 use Mautic\PluginBundle\Helper\IntegrationHelper;
 use Mautic\SmsBundle\Api\AbstractSmsApi;
-use MauticPlugin\MauticMessageBirdBundle\Exception\RESTCallException;
+use MauticPlugin\MauticMessagebirdBundle\Exception\RESTCallException;
 use MessageBird\Client;
 use MessageBird\Objects\Message;
 use Monolog\Logger;
 
-class MessageBirdApi extends AbstractSmsApi
+class MessagebirdApi extends AbstractSmsApi
 {
     const MAX_SMS_SEND_AMOUNT = 50;
 

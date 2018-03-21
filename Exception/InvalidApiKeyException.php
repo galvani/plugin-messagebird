@@ -9,9 +9,9 @@
  * @license     GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
  */
 
-namespace MauticPlugin\MauticMessageBirdBundle\Exception;
+namespace MauticPlugin\MauticMessagebirdBundle\Exception;
 
-class InvalidApiKeyException extends MessageBirdException
+class InvalidApiKeyException extends MessagebirdException
 {
     protected $message = 'mautic.plugin.messagebird.missing_api_key';
 }

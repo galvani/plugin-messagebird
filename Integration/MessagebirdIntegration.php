@@ -10,14 +10,14 @@
  * @license     GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
  */
 
-namespace MauticPlugin\MauticMessageBirdBundle\Integration;
+namespace MauticPlugin\MauticMessagebirdBundle\Integration;
 
 use Mautic\PluginBundle\Integration\AbstractIntegration;
 
 /**
  * Class TwilioIntegration.
  */
-class MessageBirdIntegration extends AbstractIntegration
+class MessagebirdIntegration extends AbstractIntegration
 {
     /**
      * {@inheritdoc}
@@ -31,7 +31,7 @@ class MessageBirdIntegration extends AbstractIntegration
 
     public function getIcon()
     {
-        return 'plugins/MauticMessageBirdBundle/Assets/img/MessageBird.png';
+        return 'plugins/MauticMessagebirdBundle/Assets/img/MessageBird.png';
     }
 
     public function getSecretKeys()
