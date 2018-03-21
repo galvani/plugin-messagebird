@@ -18,4 +18,7 @@ use Mautic\PluginBundle\Bundle\PluginBundleBase;
  */
 class MauticMessageBirdBundle extends PluginBundleBase
 {
+    public function onPluginInstall() {
+
+    }
 }
