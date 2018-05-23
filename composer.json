@@ -4,6 +4,7 @@
   "type": "mautic-plugin",
   "require": {
     "mautic/composer-plugin": "^1.0",
+    "mautic/mautic": "^2.15",
     "messagebird/php-rest-api": "~1.9"
   },
   "license": "MIT",

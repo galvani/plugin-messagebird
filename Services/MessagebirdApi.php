@@ -20,6 +20,7 @@ use Mautic\PageBundle\Model\TrackableModel;
 use Mautic\PluginBundle\Helper\IntegrationHelper;
 use Mautic\SmsBundle\Api\AbstractSmsApi;
 use MauticPlugin\MauticMessagebirdBundle\Exception\RESTCallException;
+use Mautic\LeadBundle\Entity\Lead;
 use MessageBird\Client;
 use MessageBird\Objects\Message;
 use Monolog\Logger;
@@ -97,19 +98,23 @@ class MessagebirdApi extends AbstractSmsApi
     }
 
     /**
-     * @param string $number
-     * @param string $content
+     * @param Lead $contact
+     * @param $content
      *
      * @return bool|mixed|string
-     *
      * @throws RESTCallException
-     * @throws \Exception
      */
-    public function sendSms($number, $content)
+    public function sendSms(Lead $contact, $content)
     {
         if (is_null($this->client)) {
             throw new \Exception('MessageBird API is not set up');
         }
+
+        $number = $contact->getMobile();
+        if (empty($leadPhoneNumber)) {
+            $number = $contact->getPhone();
+        }
+
         if ($number === null) {
             return false;
         }

@@ -1,5 +1,5 @@
 # Mautic MessageBird Plugin
-MessageBird SMS Transport Integration for >= Mautic 2.13
+MessageBird SMS Transport Integration for >= Mautic 2.14
 
 ## Install
 
